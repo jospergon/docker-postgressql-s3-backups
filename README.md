@@ -13,7 +13,7 @@ db:
     POSTGRES_USER: "user"
 
 dbbackup:
-  build: .
+  image: jospergon/docker-nginx-proxy
   environment:
     AWS_ACCESS_KEY: "aws_access_key"
     AWS_SECRET_KEY: "aws_secret_key"
