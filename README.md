@@ -1,5 +1,5 @@
 # docker-postgressql-s3-backups
-Schedule posrgressql backups and store them in S3.
+Schedule posrgressql backups and store them in S3. It uses s3cmd to upload the backups to S3.
 
 # docker-compose.yml.sample
 
