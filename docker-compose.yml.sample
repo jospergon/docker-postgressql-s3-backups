@@ -1,0 +1,16 @@
+db:
+  image: postgres:9.4
+  environment:
+    PGPASSWORD: "password"
+    POSTGRES_USER: "user"
+
+dbbackup:
+  build: .
+  environment:
+    AWS_ACCESS_KEY: "aws_access_key"
+    AWS_SECRET_KEY: "aws_secret_key"
+    BUCKET: s3bucket
+    APPNAME: appname
+    PGPASSWORD: "password"
+  links:
+    - db
