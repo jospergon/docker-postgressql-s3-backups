@@ -21,5 +21,3 @@ RUN chmod u+x /run.sh
 RUN chmod u+x /backups.sh
 
 ENTRYPOINT ["/run.sh"]
-
-#CMD ["sh", "run.sh"]
