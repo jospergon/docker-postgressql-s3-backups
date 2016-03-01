@@ -1,7 +1,7 @@
 db:
   image: postgres:9.4
   environment:
-    PGPASSWORD: "password"
+    POSTGRES_PASSWORD: "password"
     POSTGRES_USER: "user"
 
 dbbackup:
