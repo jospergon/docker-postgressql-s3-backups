@@ -12,6 +12,4 @@ echo "access_key=${AWS_ACCESS_KEY}" >> ${HOME}/.s3cfg
 echo "secret_key=${AWS_SECRET_KEY}" >> ${HOME}/.s3cfg
 
 crontab /etc/crontab
-cron
-
-tail -F /var/log/cron.log
+cron -f
